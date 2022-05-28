@@ -1,3 +1,86 @@
+@charset "UTF-8";
+
+:root {
+    --backgroundColor: #E3E3E3;
+    --textColor: #140505;
+    --bodyColor: #58582D;
+    --gray: #D8D8D8;
+    --mainColor: #88B82B;
+    --outer-height: 100vh;
+    --pX: 8px;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--backgroundColor);
+}
+
+@media screen and (max-width: 480px) {
+}
+
+div, h1, h2, h3, h4, h5, h6, p, a, span, button {
+    font-family: "Lausanne-350", TsukuOldGothicStd-B, sans-serif;
+    font-weight: 300;
+    color: var(--textColor);
+    font-display: swap;
+    font-feature-settings: "palt";
+    letter-spacing: .075em;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.8;
+}
+
+:lang(en) {
+    letter-spacing: -.015em;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+}
+svg, svg path, svg g {fill: var(--textColor);}
+
+.h {font-size: 3.6rem;}
+.h0 {font-size: 2.8rem;}
+h1, .h1 {font-size: 2.4rem;}
+h2, .h2 {font-size: 2.0rem;}
+h3, .h3 {font-size: 1.8rem;}
+h4, .h4 {font-size: 1.6rem;}
+h5, .h5 {font-size: 1.4rem;}
+h6, .h6 {font-size: 1.2rem;}
+
+p, .p {
+    font-weight: 600;
+    line-height: 1.85;
+    font-size: 1.35rem;
+    letter-spacing: 0.025em;
+    text-align: justify;
+    word-wrap: break-word;
+    hyphens: auto;
+    word-break: break-all;
+}
+li {text-decoration: none;}
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: .75s ease-in-out;
+}
+a:hover {opacity: .85;}
+img {
+    object-fit: cover;
+    object-position: 50%;
+}
+
+
+
 .itemList {
     display: flex;
     flex-wrap: wrap;
